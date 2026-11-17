@@ -1,0 +1,376 @@
+
+/* GENERAL STYLING */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F2EBDD;
+    color: #263B3B;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* MAIN CONTAINER */
+.container-box {
+    width: 1100px;
+    max-width: calc(100% - 30px);
+    margin: 20px auto;
+    background-color: #FFFEFA;
+    border: 1px solid #C9D9D1;
+    overflow: hidden;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to right, #102F35, #176B68);
+    color: #F2EBDD;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 38px;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 17px;
+    color: #A8D5C8;
+}
+
+/* NAVIGATION */
+.navbar {
+    background-color: #102F35;
+}
+
+.navbar .nav-link {
+    color: #F2EBDD;
+    margin: 0 10px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #D49A62;
+}
+
+.navbar .navbar-brand {
+    color: #A8D5C8;
+    font-weight: bold;
+}
+
+/* TWO COLUMN LAYOUT */
+.content {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+main {
+    flex: 7;
+    min-width: 0;
+    padding: 20px;
+    background-color: #FFFEFA;
+}
+
+aside {
+    flex: 3;
+    min-width: 0;
+    padding: 20px;
+    background-color: #E5F0E9;
+    border: 1px solid #C9D9D1;
+}
+
+/* HEADINGS */
+h2 {
+    color: #102F35;
+    margin-bottom: 18px;
+}
+
+h3 {
+    color: #176B68;
+    margin-top: 22px;
+}
+
+/* HOME IMAGE */
+.home-image {
+    width: 45%;
+    float: left;
+    margin: 10px 20px 15px 0;
+    border: 4px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* SIDEBAR IMAGES */
+.side-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* SIDEBAR CARDS */
+.side-card {
+    background-color: #FFFEFA;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #C9D9D1;
+    border-radius: 10px;
+}
+
+.side-card h3 {
+    margin-top: 12px;
+}
+
+.side-note {
+    background-color: #DCEBE4;
+    padding: 15px;
+    border-left: 4px solid #D49A62;
+    border-radius: 5px;
+}
+
+/* LINKS */
+a {
+    color: #176B68;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #B96F52;
+    text-decoration: underline;
+}
+
+/* LISTS */
+li {
+    margin-bottom: 8px;
+}
+
+/* MARINE ANIMAL SIDEBAR LIST */
+.animal-list {
+    list-style: none;
+    padding: 0;
+}
+
+.animal-list li {
+    margin-bottom: 15px;
+}
+
+.animal-list a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.animal-list img {
+    width: 65px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* MARINE LIFE ARTICLE */
+article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+article section {
+    background-color: #F2EBDD;
+    padding: 15px;
+    border: 1px solid #C9D9D1;
+    border-radius: 8px;
+}
+
+figure {
+    margin: 10px 0;
+}
+
+.destination-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+figcaption {
+    text-align: center;
+    color: #64736C;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* GUIDE SECTIONS */
+main section {
+    background-color: #F2EBDD;
+    padding: 18px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #C9D9D1;
+}
+
+main section h3 {
+    margin-top: 0;
+}
+
+/* BEAUTIFUL OCEAN MOMENTS GALLERY */
+.travel-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    background-color: #FFFEFA;
+    border: 1px solid #C9D9D1;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(16, 47, 53, 0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.gallery-item h3 {
+    font-size: 18px;
+    margin: 12px 5px 5px;
+}
+
+.gallery-item p {
+    font-size: 14px;
+    padding: 0 8px;
+}
+
+/* BOOTSTRAP CAROUSEL */
+#oceanCarousel {
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#oceanCarousel img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(16, 47, 53, 0.8);
+    border-radius: 8px;
+}
+
+/* AUDIO AND PDF */
+audio {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#resources a {
+    display: inline-block;
+    background-color: #176B68;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 5px;
+    border-radius: 5px;
+}
+
+#resources a:hover {
+    background-color: #B96F52;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background-color: #102F35;
+    color: #F2EBDD;
+    text-align: center;
+    padding: 18px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* TABLET RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    main, aside {
+        width: 100%;
+    }
+
+    .home-image {
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+    }
+
+    article {
+        grid-template-columns: 1fr;
+    }
+
+    .travel-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #oceanCarousel img {
+        height: 220px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+@media (max-width: 480px) {
+    .container-box {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    main, aside {
+        padding: 15px;
+    }
+
+    header {
+        padding: 25px 10px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .travel-gallery {
+        grid-template-columns: 1fr;
+    }
+}
